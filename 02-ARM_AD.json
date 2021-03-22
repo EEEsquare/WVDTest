@@ -41,7 +41,7 @@
         },
         "DomainName": {
             "type": "string",
-            "defaultValue": "contoso.local"
+            "defaultValue": "JustComma.local"
         }
     },
     "variables": {
@@ -253,7 +253,7 @@
                 "autoUpgradeMinorVersion": true,
                 "settings": {
                     "fileUris": [
-                        "https://raw.githubusercontent.com/bfrankMS/wvdsandbox/master/BaseSetupArtefacts/CSE_AD.ps1"
+                        "https://raw.githubusercontent.com/EEEsquare/WVDTest/main/CSE_AD.ps1"
                     ],
                     "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File CSE_AD.ps1 ',parameters('DomainName'), ' ',parameters('adminPassword'))]"
                 },
