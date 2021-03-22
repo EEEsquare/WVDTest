@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmName": {
-            "defaultValue": "JustComma-AD-VM1",
+            "defaultValue": "JustComm-AD-VM1",
             "type": "string"
         },
         "adminUser": {
@@ -41,17 +41,17 @@
         },
         "DomainName": {
             "type": "string",
-            "defaultValue": "JustComma.local"
+            "defaultValue": "JustComm.local"
         }
     },
     "variables": {
-        "ServiceShortName": "JustComma",
+        "ServiceShortName": "JustComm",
         "VNETName": "[concat(variables('ServiceShortName'),'-vnet')]",
         "DCSubnet": "snet-DomainController",
         "storageAccountName": "[concat('addiag',substring(guid(resourceGroup().id),0,4))]",
         "vmNicName": "[concat(parameters('vmName'),'-NIC1')]",
-        "nsgName": "JustComma-AD-nsg",
-        "availabilitySetName": "JustComma-AD-avail"
+        "nsgName": "JustComm-AD-nsg",
+        "availabilitySetName": "JustComm-AD-avail"
     },
     "resources": [
         {

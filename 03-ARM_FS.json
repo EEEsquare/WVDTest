@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmName": {
-            "defaultValue": "JustComma-FS-VM1",
+            "defaultValue": "JustComm-FS-VM1",
             "type": "string"
         },
         "adminUser": {
@@ -41,18 +41,18 @@
         },
         "DomainName": {
             "type": "string",
-            "defaultValue": "JustComma.local"
+            "defaultValue": "JustComm.local"
         }
     },
     "variables": {
-        "ServiceShortName": "JustComma",
+        "ServiceShortName": "JustComm",
         "VNETName": "[concat(variables('ServiceShortName'),'-vnet')]",
         "DCSubnet": "snet-FileServices",
         "storageAccountName": "[concat('fsdiag',substring(guid(resourceGroup().id),0,4))]",
         "vmNicName": "[concat(parameters('vmName'),'-NIC1')]",
         "vmPIPName": "[concat(parameters('vmName'),'-PIP')]",
-        "nsgName": "JustComma-FS-nsg",
-        "availabilitySetName": "JustComma-FS-avail",
+        "nsgName": "JustComm-FS-nsg",
+        "availabilitySetName": "JustComm-FS-avail",
         "existingDomainUPN": "[concat(parameters('adminUser'),'@',parameters('DomainName'))]"
     },
     "resources": [

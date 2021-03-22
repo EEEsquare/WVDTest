@@ -11,7 +11,7 @@
         }
     },
     "variables": {
-        "ServiceShortName": "JustComma",
+        "ServiceShortName": "JustComm",
         "VNETName": "[concat(variables('ServiceShortName'),'-vnet')]",
         "DCSubnet": "snet-DomainController",
         "GatewaySubnet": "GatewaySubnet",
